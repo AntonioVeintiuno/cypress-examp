@@ -1,6 +1,6 @@
 # cypress-examp
 this repo is to create local test on cypress
-##Run Cypress
+## Run Cypress
 ```bash
 cd /your/project/path
 ```
