@@ -1,0 +1,14 @@
+{
+  "name": "cypres-examp",
+  "version": "1.0.0",
+  "description": "this repo is to use Cypress examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run "
+  },
+  "author": "Antonio Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.3.1"
+  }
+}
