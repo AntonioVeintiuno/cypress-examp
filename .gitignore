@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/
+
+#ignore enviroment variables file
+cypress.env.json

@@ -8,11 +8,11 @@ context('Actions', () => {
     cy.visit('https://www.instagram.com/accounts/login/?source=auth_switcher')
 
     cy.get('input[name="username"]')
-      .type('moeeantonio', { delay: 100 }).should('have.value', 'moeeantonio')
+      .type(Cypress.env('user'), { delay: 200 }).should('have.value', Cypress.env('user'))
     // cy.wait(2000)
     cy.get('input[name="password"]')
-    .type('Ggaj1901227!', { delay: 200 }).should('have.value', 'Ggaj1901227!')
-    // cy.wait(2000)
+    .type(Cypress.env('password'), { delay: 200 }).should('have.value', Cypress.env('password'))
+    cy.wait(2000)
 
     //click on login
     cy.get('.L3NKy').click()
@@ -24,10 +24,11 @@ context('Actions', () => {
 
   it('.type() - type on search bar user name to search', () => {
     cy.get('.XTCLo')
-      .type('raf4.q0').should('have.value', 'raf4.q0')
+      .type('raf4.q0', { delay: 100 }).should('have.value', 'raf4.q0')
+      .type('{downarrow}{enter}')
 
     cy.wait(1000)
-    cy.get('.z556c').click()
+    // cy.get('.z556c').click()
     cy.wait(1000)
     cy.get('.FyNDV').click('topLeft')
 
