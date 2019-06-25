@@ -4,7 +4,8 @@
   "description": "this repo is to use Cypress examples",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run "
+    "test": "cypress run",
+    "cypress": "./node_modules/.bin/cypress open"
   },
   "author": "Antonio Garcia",
   "license": "ISC",

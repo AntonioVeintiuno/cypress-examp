@@ -16,7 +16,7 @@ context('Actions', () => {
 
     //click on login
     cy.get('.L3NKy').click()
-    cy.wait(1000)
+    cy.wait(2000)
     // select not send notifications
     cy.get('.HoLwm').click()
 
@@ -27,10 +27,10 @@ context('Actions', () => {
       .type('raf4.q0', { delay: 100 }).should('have.value', 'raf4.q0')
       .type('{downarrow}{enter}')
 
-    cy.wait(1000)
-    // cy.get('.z556c').click()
-    cy.wait(1000)
-    cy.get('.FyNDV').click('topLeft')
+    // cy.wait(1000)
+    // // cy.get('.z556c').click()
+    // cy.wait(1000)
+    // cy.get('.FyNDV').click('topLeft')
 
       // .FyNDV articl class
   })
